@@ -107,6 +107,15 @@ ${breveragePrice}<br>
  <input type="submit" value="Beverages">
  </form>
  
-
+<form action="chat" method="post">
+<h3>
+${ mostUsedMessagingApp}
+${ numberOfChatPerDay}
+${ numberofgroupChat}
+${ numberOfMessagingApp}
+${ totalNumberOfChat}
+</h3>
+<input type="submit" value="Chat Details">
+</form>
 </body>
 </html>
