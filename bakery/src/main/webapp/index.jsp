@@ -22,14 +22,14 @@
  
  <form action="call" method="post">
  <table>
-<tr><td> Name Of The Bakery</td><td><input type="text" name="bakery.name"></td></tr>
- <tr><td>Name of the owner</td><td><input type="text" name="bakery.ownerName"></td></tr>
- <tr><td>Name of OwnerWife</td><td><input type="text" name="bakery.ownerWife"></td></tr>
+<tr><td> Name Of The Bakery</td><td><input type="text" name="name"></td></tr>
+ <tr><td>Name of the owner</td><td><input type="text" name="ownerName"></td></tr>
+ <tr><td>Name of OwnerWife</td><td><input type="text" name="ownerWifeName"></td></tr>
  <tr><td>Is Owner Married</td></tr>
- <tr><td><input type="radio" value="true" name="bakery.isMarried">yes</td>
- <td><input type="radio" value="false" name="bakery.isMarried">No</td></tr>
- <tr><td>Bakery Special for</td><td><textarea rows="3" cols="3"></textarea></td></tr>
- <tr><td>Since</td><td><input type="text" name="bakery.since">
+ <tr><td><input type="radio" value="true" name="isMarried">yes</td>
+ <td><input type="radio" value="false" name="isMarried">No</td></tr>
+ <tr><td>Bakery Special for</td><td><textarea rows="3" cols="3" name="specialFor"></textarea></td></tr>
+ <tr><td>Since</td><td><input type="text" name="since">
  </td>
  </tr>
  <tr><td><input type="submit" value="save">
