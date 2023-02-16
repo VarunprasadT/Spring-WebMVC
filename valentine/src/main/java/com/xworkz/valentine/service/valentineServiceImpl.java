@@ -31,7 +31,7 @@ public class valentineServiceImpl implements ValintineService{
 		
 		Set<ConstraintViolation<ValentineDTO>> constraintViolations = validator.validate(dto);
 		
-		if (constraintViolations != null && constraintViolations.isEmpty())
+		if (constraintViolations != null && !constraintViolations.isEmpty())
 		{
 			System.err.println("Vaiolation exist, return vaiolation "+dto);
 		

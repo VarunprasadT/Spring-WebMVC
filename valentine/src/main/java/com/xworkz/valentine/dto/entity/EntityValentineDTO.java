@@ -18,6 +18,6 @@ private String name;
 private String valentineName;
 	@Column(name="v_place")
 private String place;
-	@Column(name="gift")
+	@Column(name="v_gift")
 private String gift;
 }
