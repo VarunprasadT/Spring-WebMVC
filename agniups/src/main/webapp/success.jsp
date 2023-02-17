@@ -7,6 +7,6 @@
 <title>X-workz</title>
 </head>
 <body>
-<h1>Complaint Sucessfull</h1>
+<h1>Complaint Registered Sucessfull</h1>
 </body>
 </html>
