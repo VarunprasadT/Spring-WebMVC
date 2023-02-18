@@ -26,4 +26,13 @@ public class RepoImpl implements Repo{
 		
 	}
 
+	@Override
+	public EntityValentineDTO findById(int id) {
+		System.out.println("Find by id in repo...."+id);
+		EntityManager entityManager = this.entityManagerFactory.createEntityManager();
+		EntityValentineDTO factory	=	entityManager.find(EntityValentineDTO.class, id);
+		entityManager.close();
+		return factory;
+	}
+
 }

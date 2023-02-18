@@ -12,4 +12,8 @@ public interface ValintineService {
 
 	Set<ConstraintViolation<ValentineDTO>>validateAndSave(ValentineDTO dto);
 	
+	default ValentineDTO findById(int id) {
+		return null;
+	}
+	
 }

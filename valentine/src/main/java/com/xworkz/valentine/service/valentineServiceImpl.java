@@ -15,11 +15,11 @@ import com.xworkz.valentine.dto.ValentineDTO;
 import com.xworkz.valentine.dto.entity.EntityValentineDTO;
 import com.xworkz.valentine.repo.RepoImpl;
 @Service
-public class valentineServiceImpl implements ValintineService{
+public class ValentineServiceImpl implements ValintineService{
 	@Autowired
 	private RepoImpl repoIMPL;
 
-	public valentineServiceImpl() {
+	public ValentineServiceImpl() {
 		System.out.println("Running.....valentineServiceImpl");
 	}
 
@@ -34,7 +34,6 @@ public class valentineServiceImpl implements ValintineService{
 		if (constraintViolations != null && !constraintViolations.isEmpty())
 		{
 			System.err.println("Vaiolation exist, return vaiolation "+dto);
-		
 		
 		return constraintViolations;
 		}
@@ -51,5 +50,24 @@ public class valentineServiceImpl implements ValintineService{
 			return Collections.emptySet();
 		}
 	}
+
+	@Override
+	public ValentineDTO findById(int id) {
+		
+		if(id>0) {
+			EntityValentineDTO dto2 = new EntityValentineDTO();
+			if(dto2 != null) {
+				System.out.println("entity is found in service for id: "+id);
+				ValentineDTO dto = new ValentineDTO();
+				dto.setGift(dto2.getGift());
+				dto.setName(dto2.getName());
+				dto.setPlace(dto2.getPlace());
+				dto.setValentineName(dto2.getValentineName());
+				dto.setId(dto2.getId());
+				return dto;
+			}
+		}
+		return ValintineService.super.findById(id);
+		}
 
 }

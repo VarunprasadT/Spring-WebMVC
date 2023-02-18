@@ -20,4 +20,7 @@ private String valentineName;
 private String place;
 	@Column(name="v_gift")
 private String gift;
+	
+
+	
 }
